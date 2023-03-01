@@ -1,14 +1,14 @@
-import { BackTop } from 'antd';
+import { BackTop } from "antd";
 const style = {
-    height: 40,
-    width: 40,
-    lineHeight: '40px',
-    borderRadius: 4,
-    backgroundColor: '#1088e9',
-    color: '#fff',
-    textAlign: 'center',
-    fontSize: 14,
-  };
+  height: 40,
+  width: 40,
+  lineHeight: "40px",
+  borderRadius: 4,
+  backgroundColor: "#1088e9",
+  color: "#fff",
+  textAlign: "center",
+  fontSize: 14,
+};
 const AppFooter = () => {
   return (
     <div className="container">
@@ -45,9 +45,11 @@ const AppFooter = () => {
           </li>
         </ul>
         <div className="copyright">Copyright &copy; 2022 Demo</div>
-        <BackTop>
-      <div style={style}><i className="fas fa-location-arrow"></i></div>
-    </BackTop>
+        <BackTop style={{right:'25px'}}>
+          <div style={style}>
+            <i className="fas fa-location-arrow"></i>
+          </div>
+        </BackTop>
       </div>
     </div>
   );
